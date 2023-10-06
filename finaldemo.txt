@@ -1,0 +1,48 @@
+cholok a intnum<<-1
+cholok b=longnum<<10
+cholok c=longnum<<10.4
+cholok d=floatnum<<5.8
+cholok e=boolnum<<True
+cholok f=charnum<<' '
+cholok g=stringnum<<"Mahdi"
+sthir cholok f=intnum<<9
+i<<+(a,1)
+a<<+(a,b)
+*?
+!!
+motamot
+thamo
+choltethako
+somosto
+goponio
+rokkhito
+jog koro[Cplusplus.h]
+@!
+This is
+a multiline Comment
+!@
+
+@@ This is a single line comment
+jog koro[Cplusplus.h]
+qwe
+
+
+
+sdfd
+whilechokro[ <(a,20) ]{
+}
+jodi[<(a,20)]{
+
+}
+abarjodi[ <(b,10)]{
+   
+}
+
+forchokro[b<<3,<(b,50),+(b,+)]{
+
+    a<<+(a,3)
+    b<<-(b-3)
+}
+
+
+fds
