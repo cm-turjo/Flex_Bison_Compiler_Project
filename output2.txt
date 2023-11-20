@@ -30,8 +30,6 @@ After the Multiplication Operation between 33.5 & 55.5 is: 1859.25
 After the Division Operation between 33.5 & 55.5Result is: 0.603604
 This is a Comment
 Output of Integer variable is : 0
-
-After the Post Increment Operation result is: 1
 Output of Integer variable is : 5
 
 After the Post Decrement Operation result is: 4
@@ -47,9 +45,9 @@ This is a Comment
 Invalid Statement.
 Output of Integer variable is : 50
 Output of Integer variable is : 99
-Array Access
+Array Access Error
 Output of Integer variable is : -1
-Array Access
+Array Access Error
 Output of Integer variable is : -1
 This is a Comment
 Output of Integer variable is : 4
@@ -57,5 +55,115 @@ Output of Integer variable is : 4
 GCD of 1 & 10 is : 1
 
 IF statement output 1
+After the Addition Operation between 4 & 5 Result is: 9
+
+LCM of 5 & 10 is : 10
+Output of Integer variable is : 0
+
+Length of String: KUET is: 4
+
+
+Maximum between 2 & 5 is : 5
+
+ELSE statement output 4
+
+IF statement output 9
+Array Access Error
+Output of Integer variable is : -1
+This is a Comment
+
+ForChokro Iteration:1 output:5
+
+ForChokro Iteration:2 output:5
+
+ForChokro Iteration:3 output:5
+
+ForChokro Iteration:4 output:5
+This is a Comment
+
+Do_While Iteration:5 output:100
+Do_While Iteration:6 output:100
+Do_While Iteration:7 output:100
+Do_While Iteration:8 output:100
+Do_While Iteration:9 output:100
+This is a Comment
+Output of Integer variable is : 100
+While Iteration:5 output:1
+While Iteration:4 output:1
+While Iteration:3 output:1
+While Iteration:2 output:1
+
+While Iteration:1 output:100
+While Iteration:2 output:100
+While Iteration:3 output:100
+While Iteration:4 output:100
+While Iteration:5 output:100
+This is a Comment
+
+This is a switch statement.
+
+Case 99: ouput: 55
+
+This is a switch statement.
+
+LCM of 33 & 99 is : 99
+
+Case 99: ouput: 11:
+This is a Comment
+Output of Integer variable is : 88
+This is a Comment
+Function Executed Successfully
+
+Output of Integer variable is : 60
+Function Executed Successfully
+
+Output of Integer variable is : 75
+This is a Comment
+
+Maximum between 5 & 5 is : 5
+Factorial of 5 is: 120
+
+CEIL Value of 5.4 is : 6
+
+Floor Value of 3.5 is : 3
+
+Minimum between 4 & 5 is : 4
+
+Maximum between 5 & 6 is : 6
+
+Log value of 10 is : 2.30259
+
+POW Result is: 32
+
+TAN value of 30 is : 0.577352
+
+SINE value of 45 is : 0.707108
+
+COS value of 60 is : 0.499998
+
+LCM of 5 & 50 is : 50
+
+GCD of 2 & 50 is : 2
+
+Length of String: CSE is: 3
+
+
+Prime.
+This is a Comment
+
+Between CSE  & KUET String: CSE  is smaller...
+
+Before Concatanation: String1 is: CSE 
+
+Before Concatanation: String2 is: KUET
+After Concatanation: String1 is: CSE KUET
+Output of String variable is: CSE KUET
+Output of String variable is: KUET
+
+ABS Value of -5 is :5
+
+ABS Value of -2 is :2
+Function Executed Successfully
+
 
 MAIN Function Ended Successfully............

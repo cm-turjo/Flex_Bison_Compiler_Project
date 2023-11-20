@@ -99,40 +99,140 @@ Dekhaoi({#arr5, 0})
 Cholok d1: intnum << 4
 Dekhaoi(d1)
 Jodi [<(d1,5)] 
+{   
+    bkaj->GCD(1,10)  
+}
+
+Jodi [<(d1,5)]
+{
+    +(d1,5)
+}
+AbarJodi [==(d1,5)]
+{
+    bkaj->LCM(5,10)
+    Dekhaoi(<(5,3))
+
+}
+Nahole
+{
+   bkaj->LEN("KUET")
+   bkaj->MAX(2,5)
+
+}
+
+Dekhaoi({#arr1, 2})
+
+
+## ForChokro Block ##
+Cholok c1: intnum << 1
+Cholok c2: intnum << 100
+ForChokro [c1, <(c1,5), +(c1,+)]
 {
     
-    bkaj->GCD(1,10)
+}
+
+## Do-While Chokro Block ##
+
+Cholok m1: intnum << 5
+endl
+Koro
+{
+    c2
+}
+Chokro[<(m1,10)]
+
+
+## WhileChokro Block ##
+
+WhileChokro[>(m1,1)]
+{
+    Dekhaoi(c2)
     
-    
+}
+endl
+WhileChokro[1]
+{
+    c2
+    Thamo(m1)
+}
+
+## Switch Case ##
+
+Cholok a1: intnum << 99
+
+Poriborton[a1]
+bikolpo[1]:
+10
+bikolpo[99]:
+55
+bikolpo[5]:
+11
+auto:
+100
+
+
+Poriborton[a1]
+bikolpo[1]:
+10
+bikolpo[98]:
+55
+bikolpo[bkaj->LCM(33,99)]:
+11
+auto:
+100
+
+##Value Change ##
+
+a1<<88
+Dekhaoi(a1)
+
+## Function Implementation ##
+
+Dekhaoi(intnum kaj->triplesum(10,20,):{	
+	30 
+})
+
+Dekhaoi(intnum kaj->triplesum2(10,20,):{	
+	45 Motamot
+})
+
+## Buildin Functions ##
+
+bkaj->MAX(5,5)
+bkaj->FACTORIAL(5)
+bkaj->CEIL(5.4)
+bkaj->FLOOR(3.5)
+bkaj->MIN(4,5)
+bkaj->MAX(5,6)
+bkaj->LOGE(10.0)
+bkaj->POW(2.0,5.0)
+bkaj->TAN(30.0)
+bkaj->SIN(45.0)
+bkaj->COS(60.0)
+bkaj->LCM(5,50)
+bkaj->GCD(2,50)
+bkaj->LEN("CSE")
+bkaj->PRIME(5)
+
+## String Manipulation ##
+
+Cholok ab:stringnum <<"CSE "
+Cholok ab2:stringnum <<"KUET"
+bkaj->CMP(ab,ab2)
+bkaj->CAT(ab,ab2)
+Dekhaos(ab)
+Dekhaos(ab2)
+bkaj->ABS(-5)
+
+intnum kaj->turjo(10,40,):
+{
+    bkaj->ABS(-2)
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Motamot(5)
-
+Motamot(0)
 }
 
 

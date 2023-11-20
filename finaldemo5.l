@@ -44,7 +44,7 @@
 "<="                              {return LEQ;}
 "=="                              {return EQ;}
 "!="                              {return NEQ;}
-[kaj][-][>][a-zA-Z0-9]+             {return FUN;}
+[k][a][j][-][>][a-zA-Z0-9]+             {return FUN;}
 "#"                               {return *yytext;}
 [#][a-z<>.h]+                     {return HEAD;}
 [/]{2}.*                          {return CMT;}
@@ -65,12 +65,12 @@
 "bkaj->COS"                         {return COS;}
 "bkaj->TAN"                         {return TAN;}
 "bkaj->POW"                         {return POW;}
-"bkaj->LN"                          {return LN;}
+"bkaj->LOGE"                          {return LN;}
 "bkaj->PRIME"                       {return PRIME;}
+"bkaj->FACTORIAL"                   {return FACT;}
 "Dekhaoi"                         {return OUTPUTI;}
 "Dekhaof"                         {return OUTPUTF;}
 "Dekhaos"                         {return OUTPUTS;}
-"pfa"                             {return PFA;}
 "inputi"                          {return INPUTI;}
 "inputf"                          {return INPUTF;}
 "endl"                            {return END;}
@@ -89,14 +89,14 @@
 "WhileChokro"                           {return WHILE;}
 "Chokro"                            {return LOOP;}
 "Poriborton"                           {return SW;}
-"opt"                             {return CA;}
-"dd"                              {return DF;}
-"do"                              {return DO;}
+"bikolpo"                             {return CA;}
+"auto"                              {return DF;}
+"Koro"                              {return DO;}
 "Shuru Kori"                          {return MAIN;}
 "##".*"##"                        {printf("This is a Comment\n");}
-[a-zA-Z][a-zA-Z0-9]*              {yylval.variable.str = yytext;
+[a-zA-Z][a-zA-Z0-9]*              {yylval.variable.str = strdup(yytext);
                                     return ID;}
-.                                 {printf("Unknown character.\n");}
+.                                 {printf("Unknown character is detected.\n");}
 %%
 int yywrap(void) {
     return 1;
