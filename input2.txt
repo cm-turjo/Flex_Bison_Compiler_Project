@@ -184,17 +184,17 @@ auto:
 ##Value Change ##
 
 a1<<88
-Dekhaoi(a1)
+
 
 ## Function Implementation ##
 
-Dekhaoi(intnum kaj->triplesum(10,20,):{	
-	30 
-})
+intnum kaj->triplesum(10,20,):{	
+	Dekhaoi(a1) 
+}
 
-Dekhaoi(intnum kaj->triplesum2(10,20,):{	
+intnum kaj->triplesum2(10,20,):{	
 	45 Motamot
-})
+}
 
 ## Buildin Functions ##
 
@@ -214,6 +214,7 @@ bkaj->GCD(2,50)
 bkaj->LEN("CSE")
 bkaj->PRIME(5)
 
+
 ## String Manipulation ##
 
 Cholok ab:stringnum <<"CSE "
@@ -224,10 +225,20 @@ Dekhaos(ab)
 Dekhaos(ab2)
 bkaj->ABS(-5)
 
-intnum kaj->turjo(10,40,):
+intnum kaj->turjo(5.9,5.5,):
 {
-    bkaj->ABS(-2)
+   Jodi[<(a1,100)]
+   {
+    bkaj->FACTORIAL(6)
+   }
 }
+
+bkaj->BITOR(5,9)
+bkaj->BITAND(5,9)
+bkaj->BITNOT(5)
+bkaj->BITXOR(5,9)
+bkaj->BITLEFT(9,1)
+bkaj->BITRIGHT(9,1)
 
 
 

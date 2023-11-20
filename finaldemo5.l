@@ -61,6 +61,7 @@
 "intnum"                            {return INTT;}
 "floatnum"                            {return FL;}
 "stringnum"                          {return STT;}
+
 "bkaj->SIN"                         {return SINE;}
 "bkaj->COS"                         {return COS;}
 "bkaj->TAN"                         {return TAN;}
@@ -74,6 +75,7 @@
 "inputi"                          {return INPUTI;}
 "inputf"                          {return INPUTF;}
 "endl"                            {return END;}
+
 "bkaj->LEN"                         {return LEN;}
 "bkaj->CMP"                         {return CMP;}
 "bkaj->CAT"                         {return CAT;}
@@ -82,6 +84,13 @@
 "bkaj->LCM"                         {return LCM;}
 "bkaj->MIN"                         {return MIN;}
 "bkaj->MAX"                         {return MAX;}
+"bkaj->BITAND"                      {return BITAND;}
+"bkaj->BITOR"                       {return BITOR;}
+"bkaj->BITNOT"                      {return BITNOT;}
+"bkaj->BITXOR"                      {return BITXOR;}
+"bkaj->BITLEFT"                     {return BITLEFT;}
+"bkaj->BITRIGHT"                    {return BITRIGHT;}
+
 "Jodi"                              {return IF;}
 "AbarJodi"                             {return ELIF;}
 "Nahole"                             {return ELSE;}

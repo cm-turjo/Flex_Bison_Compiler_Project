@@ -28,18 +28,22 @@
     };
     listt list1[50];
     
-    // typedef struct{
-    // 	char func_name[100];
-    // }funlists;
-    // funlists funlist[50];
+
     int check(int n);
 
     int count1,sw,dv,array_counter;
+
     store find_value(char **sym);
+
     int add_value(char **sym);
-    int find_array_value(char **sym,int j);
-    int add_array_value(char **sym,int j);
+
     unsigned int factorial (unsigned int n);
+
+    int find_array_value(char **sym,int j);
+
+    int add_array_value(char **sym,int j);
+
+    
    
 %}
 
@@ -57,7 +61,7 @@
 %token<variable>INT INTT FL FLOAT ID STRING STT VOID AN INIT EQ NEQ GEQ LEQ STOP GOING LOOP FUN MAIN DEP
 %type<variable>statement factor expr  assignments assignment var declaration type display input add1 sub1 mul1 div1 mod1 great less equal notequal eqgreat eqless condition if_else elseif else switch_ case cases df for while break_con do_while array array_assignment function return built_func main end dep
 
-%token IF ELIF ELSE FOR SW CA WHILE COL INC DEC MIN MAX GCD LCM OUTPUTI DO PRIME DF POW OUTPUTF PFA SINE COS TAN LN CMT HEAD ABS FLOOR CEIL RET OUTPUTS  LEN CMP CAT CPY END INPUTI INPUTF FACT
+%token IF ELIF ELSE FOR SW CA WHILE COL INC DEC MIN MAX GCD LCM OUTPUTI DO PRIME DF POW OUTPUTF PFA SINE COS TAN LN CMT HEAD ABS FLOOR CEIL RET OUTPUTS  LEN CMP CAT CPY END INPUTI INPUTF FACT BITXOR BITOR BITAND BITNOT BITRIGHT BITLEFT
 
 %nonassoc IF
 %nonassoc ELIF
@@ -168,11 +172,20 @@ array_assignment:
     ;
 
 function:
-	type FUN LFB expr COMMA expr COMMA RFB COLON LSB expr return RSB {cout<<"Function Executed Successfully"<<endl; 
-    int val1 = $4.ival;
-								    int val2 = $6.ival;
-								    int val3 = $11.ival;
-								    $$.ival = val1 + val2 + val3;cout<<""<<endl;}
+	type FUN LFB expr COMMA expr COMMA RFB COLON LSB expr return RSB {
+
+        
+
+        
+
+        
+        
+        cout<<"Function Executed Successfully"<<endl; 
+    //int val1 = $4.ival;
+								    // int val2 = $6.ival;
+								    // int val3 = $11.ival;
+								    // $$.ival = val1 + val2 + val3;cout<<""<<endl;
+                                    }
         ;
 built_func:        								    
         LEN LFB expr RFB {
@@ -343,6 +356,37 @@ built_func:
     cout<<"ABS Value of "<<$3.ival<<" is :"<<n<<endl;
     $$.ival=$3.fval;
    }
+   |BITAND LFB expr COMMA expr RFB{
+    int n= $3.ival & $5.ival;
+    cout<<"Bitwise AND Operation between "<<$3.ival<<" & "<<$5.ival<<" is: "<<n<<endl;
+    $$.ival=n;
+   }
+   |BITOR LFB expr COMMA expr RFB{
+    int n= $3.ival | $5.ival;
+    cout<<"Bitwise OR Operation between "<<$3.ival<<" & "<<$5.ival<<" is: "<<n<<endl;
+    $$.ival=n;
+   }
+   |BITXOR LFB expr COMMA expr RFB{
+    int n= $3.ival ^ $5.ival;
+    cout<<"Bitwise XOR Operation between "<<$3.ival<<" & "<<$5.ival<<" is: "<<n<<endl;
+    $$.ival=n;
+   }
+   |BITLEFT LFB expr COMMA expr RFB{
+    int n= $3.ival << $5.ival;
+    cout<<"Bitwise LEFT Shift Operation between "<<$3.ival<<" & "<<$5.ival<<" is: "<<n<<endl;
+    $$.ival=n;
+   }
+   |BITRIGHT LFB expr COMMA expr RFB{
+    int n= $3.ival >> $5.ival;
+    cout<<"Bitwise RIGHT Shift Operation between "<<$3.ival<<" & "<<$5.ival<<" is: "<<n<<endl;
+    $$.ival=n;
+   }
+   |BITNOT LFB expr RFB{
+    int n= ~$3.ival ;
+    cout<<"Bitwise NOT Operation of "<<$3.ival<<" is: "<<n<<endl;
+    $$.ival=n;
+   }
+   ;
  
         
 return:
@@ -423,6 +467,9 @@ expr:
     |function expr
     |built_func expr
     |display
+    |if_else expr
+    |elseif expr
+    |else expr
    
    
    

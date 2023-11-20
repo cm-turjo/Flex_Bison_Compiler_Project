@@ -110,14 +110,10 @@ LCM of 33 & 99 is : 99
 
 Case 99: ouput: 11:
 This is a Comment
-Output of Integer variable is : 88
 This is a Comment
+Output of Integer variable is : 88
 Function Executed Successfully
-
-Output of Integer variable is : 60
 Function Executed Successfully
-
-Output of Integer variable is : 75
 This is a Comment
 
 Maximum between 5 & 5 is : 5
@@ -161,9 +157,15 @@ Output of String variable is: CSE KUET
 Output of String variable is: KUET
 
 ABS Value of -5 is :5
+Factorial of 6 is: 720
 
-ABS Value of -2 is :2
+IF statement output 720
 Function Executed Successfully
-
+Bitwise OR Operation between 5 & 9 is: 13
+Bitwise AND Operation between 5 & 9 is: 1
+Bitwise NOT Operation of 5 is: -6
+Bitwise XOR Operation between 5 & 9 is: 12
+Bitwise LEFT Shift Operation between 9 & 1 is: 18
+Bitwise RIGHT Shift Operation between 9 & 1 is: 4
 
 MAIN Function Ended Successfully............
