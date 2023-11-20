@@ -1,0 +1,61 @@
+Header File Declaration Detected!.......
+Header File Declaration Detected!.......
+
+MAIN Function Started Successfully.........
+This is a Comment
+This is a Comment
+Output of Integer variable is : 10
+Output of Float variable is : 8.88
+Output of String variable is: KUET CSE
+This is a Comment
+Output of Integer variable is : 70
+This is a Comment
+After the Addition Operation between 10 & 2 Result is: 12
+Output of Integer variable is : 12
+After the Subtraction Operation between 10 & 2 is: 8
+Output of Integer variable is : 8
+After the Subtraction Operation between 8 & 8 is: 0
+After the Multiplication Operation between 10 & 2 is: 20
+After the Division Operation between 10 & 2 is: 5
+
+After the Modulus Operation between 10 & 11 Result is: 10
+This is a Comment
+
+After the Addition Operation between 33.5 & 55.5Result is: 89
+
+After the Subtraction Operation between 33.5 & 55.5Result is: -22
+
+After the Multiplication Operation between 33.5 & 55.5 is: 1859.25
+
+After the Division Operation between 33.5 & 55.5Result is: 0.603604
+This is a Comment
+Output of Integer variable is : 0
+
+After the Post Increment Operation result is: 1
+Output of Integer variable is : 5
+
+After the Post Decrement Operation result is: 4
+Output of Integer variable is : 4
+This is a Comment
+Output of Integer variable is : 0
+Output of Integer variable is : 1
+Output of Integer variable is : 0
+
+Output of Integer variable is : 1
+Output of Integer variable is : 1
+This is a Comment
+Invalid Statement.
+Output of Integer variable is : 50
+Output of Integer variable is : 99
+Array Access
+Output of Integer variable is : -1
+Array Access
+Output of Integer variable is : -1
+This is a Comment
+Output of Integer variable is : 4
+
+GCD of 1 & 10 is : 1
+
+IF statement output 1
+
+MAIN Function Ended Successfully............
